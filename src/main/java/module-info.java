@@ -7,6 +7,6 @@ module com.visualfx.breakerfx {
     requires org.apache.logging.log4j;
 
     opens com.visualfx.breakerfx to javafx.fxml;
-    opens com.visualfx.breakerfx.controllers to javafx.fxml;
+    opens com.visualfx.breakerfx.gui.controllers to javafx.fxml;
     exports com.visualfx.breakerfx;
 }

@@ -1,0 +1,4 @@
+.root {
+    -fx-base: rgb(60, 63, 65); // dark
+    -fx-font-size: 14;
+}
