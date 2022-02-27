@@ -1,6 +1,7 @@
 package com.visualfx.breakerfx.gui.controllers;
 
 import com.visualfx.breakerfx.App;
+import com.visualfx.breakerfx.Utils;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -23,13 +24,13 @@ public class MainMenuController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        //TODO apply better visual to the buttons or delete them.
     }
 
     @FXML
     void onPlay(ActionEvent event) {
         try {
-            App.setRoot("Game");
+            App.setRoot(String.valueOf(Utils.Scenes.Game));
         } catch (IOException e) {
             //todo print error
             e.printStackTrace();
@@ -39,7 +40,7 @@ public class MainMenuController implements Initializable {
     @FXML
     void onSettings(ActionEvent event) {
         try {
-            App.setRoot("Settings");
+            App.setRoot(String.valueOf(Utils.Scenes.Settings));
         } catch (IOException e) {
             //todo print error
             e.printStackTrace();
