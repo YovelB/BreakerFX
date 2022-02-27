@@ -17,7 +17,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("MainView"));
+        scene = new Scene(loadFXML(String.valueOf(Utils.Scenes.MainMenu)));
         scene.getStylesheets().add(Objects.requireNonNull(App.class.getResource("styles.css")).toExternalForm());
         stage.setScene(scene);
         stage.show();
