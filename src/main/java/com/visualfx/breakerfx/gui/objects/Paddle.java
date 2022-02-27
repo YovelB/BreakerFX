@@ -19,5 +19,4 @@ public class Paddle extends StackPane {
         body.setStroke(paint);
         getChildren().add(body);
     }
-
 }
