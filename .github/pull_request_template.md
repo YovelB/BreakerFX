@@ -2,7 +2,6 @@
 
 ### Issue
 
-Provide a short and concise description.
 <!--- The issue this PR addresses -->
 Fixes #
 
