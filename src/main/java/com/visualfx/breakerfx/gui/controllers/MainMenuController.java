@@ -35,6 +35,7 @@ public class MainMenuController implements Initializable {
             //todo print error
             e.printStackTrace();
         }
+        App.setUpKeyPolling();
     }
 
     @FXML

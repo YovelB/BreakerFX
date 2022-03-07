@@ -11,6 +11,8 @@ import org.apache.logging.log4j.Logger;
 import java.io.IOException;
 import java.util.Objects;
 
+import com.visualfx.breakerfx.systems.KeyPolling;
+
 public class App extends Application {
     private static final Logger logger = LogManager.getLogger(App.class);
     private static Scene scene;
@@ -25,6 +27,10 @@ public class App extends Application {
 
     public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
+    }
+
+    public static void setUpKeyPolling() {
+        KeyPolling.getInstance().polLScene(scene);
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
