@@ -1,6 +1,6 @@
 package com.visualfx.breakerfx.model;
 
-import com.visualfx.breakerfx.gui.objects.Paddle;
+import com.visualfx.breakerfx.gui.entities.Paddle;
 import javafx.scene.canvas.Canvas;
 
 public class Player {

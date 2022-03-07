@@ -1,4 +1,4 @@
-package com.visualfx.breakerfx.gui.objects;
+package com.visualfx.breakerfx.gui.entities;
 
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
