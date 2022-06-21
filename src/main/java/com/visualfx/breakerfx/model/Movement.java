@@ -19,12 +19,14 @@ class Movement {
             switch (keyEvent.getCode()) {
                 case RIGHT, A -> isRightMovement.set(true);
                 case LEFT, D -> isLeftMovement.set(true);
+                default -> throw new IllegalArgumentException("Unexpected value: " + keyEvent.getCode());
             }
         };
         EventHandler<KeyEvent> keyReleaseEvent = keyEvent -> {
             switch (keyEvent.getCode()) {
                 case RIGHT, A -> isRightMovement.set(false);
                 case LEFT, D -> isLeftMovement.set(false);
+                default -> throw new IllegalArgumentException("Unexpected value: " + keyEvent.getCode());
             }
         };
         canvas.setOnKeyPressed(keyPressedEvent);

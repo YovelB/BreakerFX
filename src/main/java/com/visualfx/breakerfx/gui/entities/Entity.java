@@ -39,8 +39,16 @@ public class Entity {
         return rotation;
     }
 
+    public void setRotation(float rotation) {
+        this.rotation = rotation;
+    }
+
     public float getScale() {
         return scale;
+    }
+
+    public void setScale(float scale) {
+        this.scale = scale;
     }
 
     public Point2D getCenter() {

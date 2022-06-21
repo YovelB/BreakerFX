@@ -30,7 +30,7 @@ public class App extends Application {
     }
 
     public static void setUpKeyPolling() {
-        KeyPolling.getInstance().polLScene(scene);
+        KeyPolling.getInstance().pollScene(scene);
     }
 
     private static Parent loadFXML(String fxml) throws IOException {

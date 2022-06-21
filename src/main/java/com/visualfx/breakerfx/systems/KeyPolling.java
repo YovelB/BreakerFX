@@ -28,7 +28,7 @@ public final class KeyPolling {
         }
     }
 
-    public void polLScene(Scene scene) {
+    public void pollScene(Scene scene) {
         clearKeys();
         removeCurrentKeyHandlers();
         setScene(scene);
