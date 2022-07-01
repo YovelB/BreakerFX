@@ -10,7 +10,7 @@
     <name>BreakerFX</name>
 
     <properties>
-        <javafx.version>17.0.2</javafx.version>
+        <javafx.version>18.0.1</javafx.version>
         <controlsfx.version>11.1.1</controlsfx.version>
 
         <log4j-core.version>2.17.2</log4j-core.version>
@@ -55,6 +55,11 @@
             <artifactId>junit-jupiter-engine</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.puppycrawl.tools</groupId>
+            <artifactId>checkstyle</artifactId>
+            <version>10.3.1</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -84,11 +89,7 @@
                         <failsOnError>true</failsOnError>
                     </configuration>
                     <dependencies>
-                        <dependency>
-                            <groupId>com.puppycrawl.tools</groupId>
-                            <artifactId>checkstyle</artifactId>
-                            <version>9.3</version>
-                        </dependency>
+
                     </dependencies>
                 </plugin>
             </plugins>

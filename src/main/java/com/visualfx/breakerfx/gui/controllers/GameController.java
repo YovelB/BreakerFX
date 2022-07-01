@@ -1,15 +1,12 @@
 package com.visualfx.breakerfx.gui.controllers;
 
 import com.visualfx.breakerfx.gui.entities.Entity;
+import com.visualfx.breakerfx.systems.KeyPolling;
 import com.visualfx.breakerfx.systems.Renderer;
 import com.visualfx.breakerfx.timers.PausableAnimationTimer;
-import com.visualfx.breakerfx.model.Player;
-import com.visualfx.breakerfx.systems.KeyPolling;
-
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
@@ -37,21 +34,21 @@ public class GameController implements Initializable {
         canvas = new Canvas();
         initializeCanvas();
 
-        player = new Entity(new Image(String.valueOf(getClass().getResource("/images/paddle.png"))));
+        /*player = new Entity(new Image(String.valueOf(getClass().getResource("/images/paddle.png"))));
         player.setPosition(350, 200);
         player.setScale(0.5f);
 
         Renderer renderer = new Renderer(this.canvas);
         renderer.setBackground(new Image(String.valueOf(getClass().getResource("/images/background.png"))));
-        renderer.addEntity(player);
+        renderer.addEntity(player);*/
 
 
         PausableAnimationTimer timer = new PausableAnimationTimer() {
             @Override
             public void handleGame(long relativeNow) {
-                renderer.prepare();
+                /*renderer.prepare();
                 updatePlayerMovement(relativeNow);
-                renderer.render();
+                renderer.render();*/
             }
         };
         timer.start();
